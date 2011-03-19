@@ -28,3 +28,7 @@ body {
 #footer {
     margin-top: 3em;
 }
+
+.price-list td.price {
+    padding-right: 15px;
+}

@@ -14,10 +14,17 @@ body {
 	font-size: 16px;
 	text-align: center;
 }
+#footer #contact {
+	font-size: 13px;
+}
 
 #logo {
 	width: 289px;
 	height: 289px;
 	display: block;
 	margin: 0 auto;
+}
+
+#footer {
+    margin-top: 3em;
 }

@@ -1,0 +1,23 @@
+body {
+	font-family: 'Courier New';
+	font-size: 13px;
+	margin: 0;
+	padding: 0;
+}
+
+#container {
+	width: 800px;
+	margin: 0 auto;
+}
+
+#contact {
+	font-size: 16px;
+	text-align: center;
+}
+
+#logo {
+	width: 289px;
+	height: 289px;
+	display: block;
+	margin: 0 auto;
+}

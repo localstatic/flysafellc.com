@@ -1,4 +1,4 @@
 
 upload:
-	sitecopy -u flysafellc.com
+	sitecopy -u flysafellc
 

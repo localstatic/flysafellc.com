@@ -32,3 +32,11 @@ body {
 .price-list td.price {
     padding-right: 15px;
 }
+
+ul.plain-list {
+	list-style-type: none;
+	padding: 0;
+}
+ul.plain-list li {
+	display: inline;
+}

@@ -41,8 +41,32 @@
 
             <p>Please call or email for more information.</p>
 
-            <p>Flysafe marker photos:<br/> <a class="fancybox" href="images/flysafe-markers-003.jpg"><img src="images/flysafe-markers-003-thumb.jpg" alt="Flysafe marker photo" width="200" height="150" /></a> <a class="fancybox" href="images/flysafe-markers-005.jpg"><img src="images/flysafe-markers-005-thumb.jpg" alt="Flysafe marker photo" width="200" height="150" /></a>
-            <p>Columbian sharp-tailed grouse fence strike: <a href="http://www.youtube.com/watch?v=5_tmybr1Hv0">part 1</a> <a href="http://www.youtube.com/watch?v=1yb-tR5xspk">part 2</a></p>
+            <p>Flysafe marker photos:</p>
+			<ul class="plain-list">
+				<li>
+					<a class="fancybox" rel="photos" href="images/flysafe-markers-003.jpg"><img src="images/flysafe-markers-003-thumb.jpg" alt="Flysafe marker photo" width="200" height="150" /></a>
+				</li>
+				<li>
+					<a class="fancybox" rel="photos" href="images/flysafe-markers-005.jpg"><img src="images/flysafe-markers-005-thumb.jpg" alt="Flysafe marker photo" width="200" height="150" /></a>
+				</li>
+			</ul>
+			
+            <p>Columbian sharp-tailed grouse fence strike:</p>
+			<ul class="plain-list">
+				<li>
+					<a class="fb-youtube" href="http://www.youtube.com/watch?v=5_tmybr1Hv0"><img src="http://img.youtube.com/vi/5_tmybr1Hv0/0.jpg" alt="Fence strike video, part 1" width="200" height="150" /></a>
+				</li>
+				<li>
+					<a class="fb-youtube" href="http://www.youtube.com/watch?v=1yb-tR5xspk"><img src="http://img.youtube.com/vi/1yb-tR5xspk/0.jpg" alt="Fence strike video, part 2" width="200" height="150" /></a>
+				</li>
+			</ul>
+			
+			<p>Marker installation:</p>
+			<ul class="plain-list">
+				<li>
+					<a class="fb-youtube" href="http://www.youtube.com/watch?v=E2_Nww90lJk"><img src="http://img.youtube.com/vi/E2_Nww90lJk/0.jpg" alt="Marker installation video" width="200" height="150" /></a>
+				</li>
+			</ul>
 
             <div id="footer">
                 <div id="contact">
@@ -58,12 +82,6 @@
 
         <script type="text/javascript">
             $(document).ready(function() {
-                /* Using custom settings */
-                $("a#inline").fancybox({
-                    'hideOnContentClick': true
-                });
-
-                /* Apply fancybox to multiple items */
                 $("a.fancybox").fancybox({
                     'transitionIn'	:	'elastic',
                     'transitionOut'	:	'elastic',
@@ -71,6 +89,26 @@
                     'speedOut'		:	200,
                     'overlayShow'	:	false
                 });
+				
+				$('a.fb-youtube').click(function() {
+					$.fancybox({
+						'padding'		: 0,
+						'autoScale'		: false,
+						'transitionIn'	: 'none',
+						'transitionOut'	: 'none',
+						'title'			: this.title,
+						'width'			: 680,
+						'height'		: 495,
+						'href'			: this.href.replace(new RegExp("watch\\?v=", "i"), 'v/'),
+						'type'			: 'swf',
+						'swf'			: {
+							'wmode'		: 'transparent',
+							'allowfullscreen'	: 'true'
+						}
+					});
+
+					return false;
+				});
             });
         </script>
     </body>
